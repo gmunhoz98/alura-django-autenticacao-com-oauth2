@@ -1,23 +1,25 @@
+{% load static %}
 <!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <title>t e c h</title>
   </head>
   <body>
     <header>
-      <img src="" alt="Uma pessoa feliz no computador" class="logo" />
+      <img src="{% static 'assets/piratas_tech.png' %}" alt="Uma pessoa feliz no computador" class="logo" />
     </header>
 
     <main>
       <h1>Autenticação com OAuth 2.0</h1>
       <div class="social-media">
         <div class="social-media-details">
-          <a href=""
-            ><img src="" alt="Icone para autenticar com Github" />
-            <p>Github</p></a
-          >
+          <a href="">
+            <img src="{% static 'assets/github.svg' %}" alt="Icone para autenticar com Github" class="social-media-icon"/>
+            <p>Github</p>
+          </a>
         </div>
       </div>
     </main>
