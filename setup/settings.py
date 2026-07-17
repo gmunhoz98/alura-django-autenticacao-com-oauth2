@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SITE_ID = 1
 
 # Application definition
 
@@ -132,5 +133,5 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "templates/static")]
 
 SOCIALACCOUNT_PROVIDERS = {
-    "github": {"APP": {"client_id": "123", "secret": "456", "key": ""}}
+    "github": {"APP": {"client_id": "Ov23linZCKTGJUf28pfR", "secret": "c006b5e10029bd786281d001d37072b96fcff5e6", "key": ""}}
 }
