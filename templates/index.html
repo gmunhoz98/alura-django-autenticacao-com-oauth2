@@ -4,20 +4,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
     <title>t e c h</title>
   </head>
   <body>
     <header>
-      <img src="{% static 'assets/piratas_tech.png' %}" alt="Uma pessoa feliz no computador" class="logo" />
+      <img
+        src="{% static 'assets/piratas_tech.png' %}"
+        alt="Uma pessoa feliz no computador"
+        class="logo"
+      />
     </header>
 
     <main>
       <h1>Autenticação com OAuth 2.0</h1>
       <div class="social-media">
         <div class="social-media-details">
-          <a href="">
-            <img src="{% static 'assets/github.svg' %}" alt="Icone para autenticar com Github" class="social-media-icon"/>
+          <a href="http://localhost:8000/accounts/github/login/?process=login">
+            <img
+              src="{% static 'assets/github.svg' %}"
+              alt="Icone para autenticar com Github"
+              class="social-media-icon"
+            />
             <p>Github</p>
           </a>
         </div>

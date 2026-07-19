@@ -133,5 +133,16 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "templates/static")]
 
 SOCIALACCOUNT_PROVIDERS = {
-    "github": {"APP": {"client_id": "Ov23linZCKTGJUf28pfR", "secret": "c006b5e10029bd786281d001d37072b96fcff5e6", "key": ""}}
+    "github": {
+        "APP": {
+            "client_id": "Ov23linZCKTGJUf28pfR",
+            "secret": "c006b5e10029bd786281d001d37072b96fcff5e6",
+            "key": "",
+        }
+    }
 }
+
+LOGIN_REDIRECT_URL = "/members"
+SOCIALACCOUNT_LOGIN_ON_GET = True
+ACCOUNT_LOGOUT_ON_GET = True
+LOGOUT_REDIRECT_URL = "/"
